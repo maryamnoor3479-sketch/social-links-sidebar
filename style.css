@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: white;
+}
+
+.main {
+    margin-left: 150px;
+    padding: 20px;
+    line-height: 2;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    top: 50%;
+    width: 130px;
+    transform: translateY(-50%);
+    z-index: 1000;
+    height: 100vh;
+}
+
+/* Divider Line */
+.social-sidebar::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+/* Icons */
+.social-sidebar a {
+    color: #678491;
+    font-size: 22px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.social-sidebar a:hover {
+    color: #85a0ad;
+    transform: scale(1.2);
+}
